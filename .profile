@@ -1,3 +1,12 @@
+# set homebrew if it is there along with user's bin
+HOMEBREW=/usr/local
+
+if [ -d $HOMEBREW ]; then
+  export PATH=$HOMEBREW/bin:$PATH
+fi
+
+[ -d ~/bin ] && export PATH=~/bin:$PATH
+
 # enable color support for ls and other aliases
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
