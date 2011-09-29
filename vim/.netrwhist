@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Users/bob/Sites/bobmartens.net'
+let g:netrw_dirhist_2='/Users/bob/Sites'
+let g:netrw_dirhist_3='/Users/bob'
+let g:netrw_dirhist_4='/Users/bob/Sites/bobmartens.net'
+let g:netrw_dirhist_5='/Users/bob/Sites'
+let g:netrw_dirhist_6='/Users/bob/Sites/bobmartens.net'
+let g:netrw_dirhist_7='/Users/bob/Sites'
+let g:netrw_dirhist_8='/Users/bob/Sites/bobmartens.net'

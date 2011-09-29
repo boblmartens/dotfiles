@@ -1,0 +1,9 @@
+[user]
+	name = Bob Martens
+	email = bob@bobmartens.net
+[push]
+  # Push current branch even if you've never pushed it before
+  default = current
+[github]
+	user = boblmartens
+	token = 579c652d9ae7b426279d3d920a26795e
