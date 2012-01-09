@@ -24,5 +24,4 @@ parse_git_branch() {
 export PS1="\[\033[0;31m\]\h\[\033[33m\] \W \[\033[32m\]\$(parse_git_branch) \[\033[00m\]$\[\033[00m\] " # don't show username
 
 # rbenv inclusion stuff
-export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
