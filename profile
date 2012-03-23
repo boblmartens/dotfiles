@@ -1,11 +1,11 @@
 # set homebrew if it is there along with user's bin
-#HOMEBREW=/usr/local
+HOMEBREW=/usr/local
 
-#if [ -d $HOMEBREW ]; then
-#	export PATH=$HOMEBREW/bin:$PATH
-#fi
+if [ -d $HOMEBREW ]; then
+	export PATH=$HOMEBREW/bin:$PATH
+fi
 
-#[ -d ~/bin ] && export PATH=~/bin:$PATH
+[ -d ~/bin ] && export PATH=~/bin:$PATH
 
 # enable color support for ls and other aliases
 export CLICOLOR=1
@@ -23,5 +23,10 @@ parse_git_branch() {
 #export PS1="\[\033[0;31m\]\u@\h\[\033[33m\] \W \[\033[32m\]\$(parse_git_branch) \[\033[00m\]$\[\033[00m\] " # includes username
 export PS1="\[\033[0;31m\]\h\[\033[33m\] \W \[\033[32m\]\$(parse_git_branch) \[\033[00m\]$\[\033[00m\] " # don't show username
 
+# textmate stuff
+export EDITOR="/usr/local/bin/mate -w"
+
 # rbenv inclusion stuff
 eval "$(rbenv init -)"
+
+[ -f ~/.bundler-exec.sh ] && source ~/.bundler-exec.sh
