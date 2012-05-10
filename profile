@@ -7,6 +7,9 @@ fi
 
 [ -d ~/bin ] && export PATH=~/bin:$PATH
 
+# load Postgres.app binaries
+PATH="/Applications/Postgres.app/Contents/MacOS/bin:$PATH"
+
 # enable color support for ls and other aliases
 export CLICOLOR=1
 export LSCOLORS=ExFxCxDxBxegedabagacad
@@ -28,5 +31,3 @@ export EDITOR="/usr/local/bin/mate -w"
 
 # rbenv inclusion stuff
 eval "$(rbenv init -)"
-
-[ -f ~/.bundler-exec.sh ] && source ~/.bundler-exec.sh
