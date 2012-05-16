@@ -1,8 +1,15 @@
 TM_GIT = "/usr/local/bin/git"
 TM_ORGANIZATION_NAME = "Deck78"
 
+# The Look
 fontName = "Menlo"
 fontSize = 12
+theme = "Tomorrow Night"
 
-[ *.{org,com,info,net,me} ]
+# The Feel
+tabSize = 2
+softTabs = true
+
+# Misc Settings
+[ *.{org,com,info,net,me,edu} ]
 fileType = "source.apache-config"
