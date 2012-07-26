@@ -4,7 +4,7 @@ TM_ORGANIZATION_NAME = "Deck78"
 # The Look
 fontName = "Menlo"
 fontSize = 12
-theme = "Tomorrow Night"
+theme = "Tomorrow"
 
 # The Feel
 tabSize = 2
