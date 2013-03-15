@@ -26,6 +26,9 @@ parse_git_branch() {
 # of duplicates in the Open With submenu.
 alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user'
 
+# Heroku deployment aliases
+alias heroku-deploy="git push heroku master && heroku run rake db:migrate"
+
 # color prompt
 #export PS1="\[\033[0;31m\]\u@\h\[\033[33m\] \W \[\033[32m\]\$(parse_git_branch) \[\033[00m\]$\[\033[00m\] " # includes username
 export PS1="\[\033[0;31m\]\h\[\033[33m\] \W \[\033[32m\]\$(parse_git_branch) \[\033[00m\]$\[\033[00m\] " # don't show username
