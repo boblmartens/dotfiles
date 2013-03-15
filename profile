@@ -35,3 +35,5 @@ export EDITOR="/usr/local/bin/mate -w"
 
 # rbenv inclusion stuff
 eval "$(rbenv init -)"
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
