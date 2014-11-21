@@ -1,13 +1,10 @@
-TM_GIT = "/usr/local/bin/git"
-TM_ORGANIZATION_NAME = "Deck78"
+TM_GIT = "/usr/bin/git"
+TM_ORGANIZATION_NAME = "Bob Martens"
 
 # The Look
-fontName = "Source Code Pro"
-fontSize = 12
-<<<<<<< HEAD
+#fontName = "Source Code Pro"
+#fontSize = 12
 #theme = "Tomorrow"
-=======
->>>>>>> added Kaleidoscope as visual change tool
 
 # The Feel
 tabSize = 2

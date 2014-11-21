@@ -37,6 +37,6 @@ export PS1="\[\033[0;31m\]\h\[\033[33m\] \W \[\033[32m\]\$(parse_git_branch) \[\
 export EDITOR="/usr/local/bin/mate -w"
 
 # rbenv inclusion stuff
-eval "$(rbenv init -)"
+#eval "$(rbenv init -)"
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
