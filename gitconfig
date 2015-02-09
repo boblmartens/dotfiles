@@ -3,8 +3,8 @@
 	email = bob@bobmartens.net
 [filter "media"]
   required = true
-  clean = git media clean %f
-  smudge = git media smudge %f
+	clean = git media clean %f
+	smudge = git media smudge %f
 [push]
   # Push current branch even if you've never pushed it before
   default = current
@@ -14,16 +14,20 @@
 [core]
 	excludesfile = /Users/bob/.gitignore
 	editor = mate -w
-[difftool "Kaleidoscope"]
-	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
-[diff]
-	tool = Kaleidoscope
-[difftool]
-	prompt = false
 [mergetool "Kaleidoscope"]
 	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-	trustExitCode = true
-[mergetool]
-	prompt = false
+	trustexitcode = true
 [merge]
 	tool = Kaleidoscope
+[difftool "Kaleidoscope"]
+	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+[difftool]
+	prompt = false
+[mergetool]
+	prompt = false
+[diff]
+	tool = Kaleidoscope
+[filter "hawser"]
+	clean = git hawser clean %f
+	smudge = git hawser smudge %f
+	required = true
